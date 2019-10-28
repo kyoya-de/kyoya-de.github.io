@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 800 800"
+   height="800"
+   width="800"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1">
+    <rect x="0" y="0" width="800" height="800" fill="#FFF"/>
+    <g transform="matrix(1.3333333,0,0,-1.3333333,0,800)" id="g10">
+        <g transform="scale(0.1)" id="g12">
+            <path id="path14" style="fill:#0b2b53;fill-opacity:1;fill-rule:nonzero;stroke:none" d="m 4148.44,1486.72 h -538.42 v 2642.2 l 538.42,366.65 z m -879.23,0 h -538.42 v 2043.54 l 538.42,366.62 z m -878.58,0 H 1852.2 v 3008.85 h 538.43 z M 0,6000 V 0 H 6000 V 6000 H 0" />
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,66 @@
+{
+  "short_name": "Moco-Touch",
+  "name": "Moco-Touch",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0b2b53",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "assets/marm_logo-48.png",
+      "size": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-96.png",
+      "size": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-128.png",
+      "size": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-144.png",
+      "size": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-152.png",
+      "size": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-167.png",
+      "size": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-180.png",
+      "size": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-192.png",
+      "size": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-256.png",
+      "size": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-512.png",
+      "size": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/marm_logo-1024.png",
+      "size": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
