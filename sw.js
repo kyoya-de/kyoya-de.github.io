@@ -6,6 +6,7 @@ self.addEventListener('install', function(event) {
                 '/index.html',
                 '/styles.css',
                 '/moco-touch.js',
+                '/moco-touch-sw.js',
                 '/assets/marm_logo-48.png',
                 '/assets/marm_logo-192.png',
                 '/assets/marm_logo-144.png',
@@ -32,17 +33,6 @@ self.addEventListener('fetch', function(event) {
             return response;
         } else {
             return fetch(event.request).then(function (response) {
-                if (!event.request.url.match(/^https?:/) || event.request.url.match(/^https:\/\/[^.]+\.mocoapp\.com\/api/)) {
-                    return response;
-                }
-                // response may be used only once
-                // we need to save clone to put one copy in cache
-                // and serve second one
-                let responseClone = response.clone();
-
-                caches.open('v1').then(function (cache) {
-                    cache.put(event.request, responseClone);
-                });
                 return response;
             }).catch(function () {
                 return caches.match('/assets/marm_logo.svg');
