@@ -53,12 +53,20 @@ class MocoApi {
         );
     };
 
+    formatDate = date => {
+        const day = `0${date.getDate()}`;
+        const month = `0${date.getMonth()}`;
+        const year = `000${date.getFullYear()}`;
+
+        return `${year.substr(year.length - 4)}-${month.substr(month.length - 2)}-${day.substr(day.length - 2)}`;
+    };
+
     fetchPresences = () => {
         const lastMonth = new Date();
         lastMonth.setMonth(lastMonth.getMonth() - 1);
 
 
-        return fetch(`${this.baseUrl}/users/presences?from=${lastMonth.toISOString().split('T')[0]}&to=${new Date().toISOString().split('T')[0]}&user_id=${MocoApi.user.userId}`, {
+        return fetch(`${this.baseUrl}/users/presences?from=${this.formatDate(lastMonth)}&to=${this.formatDate(new Date())}&user_id=${MocoApi.user.userId}`, {
             method: 'GET',
             cache: 'no-cache',
             headers: {
